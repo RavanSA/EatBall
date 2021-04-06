@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "505685745954",
+    "project_id": "durakgame-6af91",
+    "storage_bucket": "durakgame-6af91.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:505685745954:android:2fb7701478f4d7ca64057b",
+        "android_client_info": {
+          "package_name": "com.example.durakgame"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "505685745954-96j5v8vcll4684u05ud7q5bl08qla34u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfR4bWjZYTzzuts4BFzrxdtgha2RZ3A-8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "505685745954-96j5v8vcll4684u05ud7q5bl08qla34u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
