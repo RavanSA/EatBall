@@ -2,6 +2,7 @@ package com.example.durakgame;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -13,17 +14,19 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
 
 public class RegisterUser extends AppCompatActivity implements View.OnClickListener {
     private EditText Textfullname, Textage, Textemail, Textpassword, Textconfirmpassword;
+    private Button registerUser;
     private FirebaseAuth mAuth;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register_user);
 
         mAuth = FirebaseAuth.getInstance();
-        TextView registerUser = (TextView) findViewById(R.id.registerUser);
+        registerUser = (Button) findViewById(R.id.registerUser);
         registerUser.setOnClickListener(this);
 
         Textfullname = (EditText) findViewById(R.id.fullname);
@@ -95,6 +98,8 @@ public class RegisterUser extends AppCompatActivity implements View.OnClickListe
                                     @Override
                                     public void onComplete(@NonNull Task<Void> task) {
                                         if (task.isSuccessful()) {
+                                            FirebaseUser user = mAuth.getCurrentUser(); //You Firebase user
+
                                             Toast.makeText(RegisterUser.this, "User registered succesfuly", Toast.LENGTH_LONG).show();
                                         } else {
                                             Toast.makeText(RegisterUser.this, "Fail", Toast.LENGTH_LONG).show();

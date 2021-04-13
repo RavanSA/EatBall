@@ -147,11 +147,11 @@
             android:layout_marginTop="10dp"
             android:background="#3bc3e0"
             android:cursorVisible="true"
+            android:onClick="onClick"
             android:radius="100dp"
             android:text="@string/sign_up"
             android:textColor="#ffffff"
             android:textSize="20dp"
-            android:onClick="onClick"
             android:textStyle="normal|bold" />
 
 
