@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prfback"
+    tools:context=".Rules"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/prftop"
+        android:padding="20dp"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="GAME RULES"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="500dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="300dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:text="Red points gives 10 points"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.475"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/the_game_has_its_own_currency_called_coins_the_coin_is_calculated_as_score_30_the_score_measures_how_many_red_and_green_points_are_collected_from_the_game_the_game_is_over_when_the_player_hits_the_bomb_there_are_levels_in_the_game_that_measure_the_success_of_the_users_level_is_calculated_with_xp_if_xp_reaches_100_it_will_increase_one_level_xp_is_calculated_as_points_20_after_the_game_is_over_the_previous_game_results_are_displayed_when_the_game_starts_all_the_coins_and_level_belonging_to_the_user_are_shown"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="460dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="425dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Green points gives 20 points"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.403"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="69dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="355dp"
+        android:layout_marginStart="80dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The player"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="66dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="80dp"/>
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:src="@drawable/redpoint"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="328dp"
+        android:layout_marginTop="300dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:text="If you hit the bomb, you will lose game"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.551"
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginStart="80dp" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/pacman"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="228dp"
+        android:layout_marginTop="250dp"/>
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:src="@drawable/green"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="274dp"
+        android:layout_marginTop="350dp"/>
+
+    <ImageView
+        android:layout_width="54dp"
+        android:layout_height="44dp"
+        android:src="@drawable/bomb"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="2dp"
+        tools:layout_editor_absoluteY="381dp"
+        android:layout_marginTop="390dp"/>
+
+    <TextView
+        android:id="@+id/rules"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Game Rules"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="169dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginLeft="100dp"/>
+
+</RelativeLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Score"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/prfback">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/prftop"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/result_title"
+            android:textSize="50sp"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"/>
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/scoreLabel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="RESULT"
+        android:textSize="40sp"
+        android:layout_marginLeft="0dp"
+        />
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_score"
+        android:textSize="40sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="-100dp"/>
+
+    <TextView
+        android:id="@+id/coinLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/coin"
+        android:textSize="40sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="-100dp"/>
+    <TextView
+        android:id="@+id/levelLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        android:textSize="40sp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="-100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-160dp"
+        android:text="XP:"
+        android:textSize="30sp"
+        android:layout_marginBottom="-20dp"/>
+
+    <ProgressBar
+        android:id="@+id/horizontal_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="370dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="16dp"
+        android:indeterminate="false"
+        android:max="100"
+        android:minHeight="100dp"
+        android:progress="1"
+        android:background="@color/prfback"
+        />
+
+
+
+
+    <Button
+        android:id="@+id/customButton"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/startbutton"
+        android:text="@string/t_r_y_a_g_a_i_n"
+        android:layout_marginTop="60dp"
+        android:onClick="tryAgain"
+        android:gravity="center"
+        android:textSize="20sp"
+        />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="144dp"
+        app:itemBackground="@color/prftop"
+        app:itemIconTint="@drawable/selector"
+        app:itemTextColor="@drawable/selector"
+        app:menu="@menu/menu_navigation">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+</LinearLayout>

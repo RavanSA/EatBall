@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EatBall"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/scoreLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/score"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:background="@color/prftop"/>
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/prfback">
+
+        <TextView
+            android:id="@+id/startLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start the Game"
+            android:textSize="24sp"
+            android:layout_gravity="center"/>
+
+        <ImageView
+            android:id="@+id/box"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/pacman"
+            android:layout_gravity="center_vertical"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/orange"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/green"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/black"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/bomb"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/pink"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/redpoint"
+            tools:ignore="ContentDescription" />
+    </FrameLayout>
+</LinearLayout>
