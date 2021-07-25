@@ -10,4 +10,9 @@
     <color name="colorOffWhite">#80ffffff</color>
     <color name="prfback">#4d7396</color>
     <color name="prftop">#DCDCDC</color>
+    <array name="dot_colors">
+        <item>#FF0000</item>
+        <item>#00FF00</item>
+        <item>#000000</item>
+    </array>
 </resources>

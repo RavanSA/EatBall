@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DurakGame.iml" filepath="$PROJECT_DIR$/.idea/modules/DurakGame.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/DurakGame.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/DurakGame.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EatBall.iml" filepath="$PROJECT_DIR$/.idea/modules/EatBall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/EatBall.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/EatBall.app.iml" />
     </modules>
   </component>
 </project>

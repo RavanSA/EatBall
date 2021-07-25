@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.durakgame">
+    package="com.project.eatball">
 
     <application
         android:allowBackup="true"
@@ -10,22 +10,21 @@
         android:screenOrientation="portrait"
         android:supportsRtl="true"
         android:theme="@style/Theme.Loginpage">
-        <activity android:name=".LeaderBoard"></activity>
-        <activity android:name=".NewGame" />
-        <activity android:name=".Score" />
-        <activity android:name=".EatBall" />
-        <activity android:name=".News" />
-        <activity android:name=".Chat" />
-        <activity android:name=".Share" />
-        <activity android:name=".UpdateProfile" />
-        <activity android:name=".Rules" />
-        <activity android:name=".Rooms" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".Profile" />
-        <activity android:name=".RegisterUser" />
-        <activity
-            android:name=".MainActivity"
-            android:screenOrientation="portrait">
+        <activity android:name="com.project.eatball.LeaderBoard" />
+        <activity android:name="com.project.eatball.NewGame" />
+        <activity android:name="com.project.eatball.Score" />
+        <activity android:name="com.project.eatball.EatBall" />
+        <activity android:name="com.project.eatball.News" />
+        <activity android:name="com.project.eatball.Chat" />
+        <activity android:name="com.project.eatball.Share" />
+        <activity android:name="com.project.eatball.UpdateProfile" />
+        <activity android:name="com.project.eatball.Rules" />
+        <activity android:name="com.project.eatball.Rooms" />
+        <activity android:name="com.project.eatball.ForgotPassword" />
+        <activity android:name="com.project.eatball.Profile" />
+        <activity android:name="com.project.eatball.RegisterUser" />
+        <activity android:name="com.project.eatball.MainActivity"/>
+        <activity android:name="com.project.eatball.SplasgScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

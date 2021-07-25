@@ -138,6 +138,21 @@
             android:textSize="20sp"
             android:textStyle="italic" />
 
+        <TextView
+            android:id="@+id/mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textviewround"
+            android:gravity="center"
+            android:text=" OR "
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:layout_marginStart="160dp"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginRight="0dp"/>
+
     </LinearLayout>
 
 </RelativeLayout>
